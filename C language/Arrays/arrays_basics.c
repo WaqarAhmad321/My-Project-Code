@@ -1,27 +1,23 @@
 #include<stdio.h>
-#include<conio.h>
-/*Written by : Waqar Ahmad
-  Date : 16/08/2022
-  Location : Mars
-  Output : To print the percentage of marks obtained by student and their grade in Fortnight exams*/
+
 int main(){
-    float Physics, Maths, Computer, Urdu, Pakstudies, English, sum, per;
+    float marks[5], sum, per;
     printf("Enter your marks in Physics : ");
-     scanf("%f", &Physics);
+     scanf("%f", &marks[0]);
     printf("Enter your marks in Computer : ");
-     scanf("%f", &Computer);
+     scanf("%f", &marks[1]);
     printf("Enter your marks in Maths : ");
-     scanf("%f", &Maths);
+     scanf("%f", &marks[2]);
     printf("Enter your marks in Urdu : ");
-     scanf("%f", &Urdu);
+     scanf("%f", &marks[3]);
     printf("Enter your marks in Pak Studies  : ");
-     scanf("%f", &Pakstudies);
+     scanf("%f", &marks[4]);
     printf("Enter your marks in English : ");
-     scanf("%f", &English);
-    sum = Physics+Maths+Computer+Urdu+Pakstudies+English;
+     scanf("%f", &marks[5]);
+    sum = marks[0] + marks[2] + marks[3] + marks[4] + marks[5];
     per = sum/175*100;
     if(per>100){
-        printf("Invalid Input!!! Enter your obtained marks according to fortnight!!! ");
+        printf("You entered wrong marks!!! Enter your obtained marks according to fortnight!!! ");
     }
     else if(per>=90){
         printf("Congratulations!!! You are Passed!!! Your percentage is %.02f and got A++ grade.",per);
@@ -44,7 +40,6 @@ int main(){
     else if(per<40){
         printf("Try next time!!! You are Failed!!!!!! Your percentage is %.02f. ",per);
     }
-    getch();
     return 0;
 //All rights reserved!!!(Just for fun)
 }

@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+#include<conio.h>
 //To guess the number 
 int main(){
     int number, guess, nguesses=1;
@@ -21,5 +22,6 @@ int main(){
         }
         nguesses++;
     } while (guess!=number);
+    getch();
     return 0;
 }

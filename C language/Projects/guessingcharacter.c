@@ -1,11 +1,11 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-int square(){
-    char randomletter[26],guess;
+int main(){
+    char guess[];
     int nguesses=1;
-    randomletter[26] = "abcdefghijklmnopqrstuvwxyz"(rand() % 26);
-    printf("The character is %s",randomletter);
+    char randomletter[] = 'A'(random() % 26);
+    printf("The character is %c",randomletter);
     do{
         printf("Guess a character between A and Z\n");
         scanf("%c",&guess);
