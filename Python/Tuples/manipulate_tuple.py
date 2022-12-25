@@ -1,0 +1,5 @@
+tup = ("Waqar", "Ahmad", 3, 2, 1, "Go")
+temp = list(tup)
+temp.append("!")
+tup = tuple(temp)
+print(tup)
